@@ -132,6 +132,6 @@ ifeq ($(shell which rcore-fs-fuse),)
 endif
 
 clean:
-	@cd rust && cargo clean
+	@cd rust && rm -rf target
 	@rm -rf biscuit/build ucore/build
 	@rm -rf $(out_dir)
